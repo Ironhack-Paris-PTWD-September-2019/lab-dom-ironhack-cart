@@ -35,3 +35,12 @@ input {
     background-color: #CF000F;
     border-color: #CF000F;
 }
+
+.shopping-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+#shopping-action {
+  text-align: center;
+}
