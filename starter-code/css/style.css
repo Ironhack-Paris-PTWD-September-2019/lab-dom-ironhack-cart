@@ -35,3 +35,13 @@ input {
     background-color: #CF000F;
     border-color: #CF000F;
 }
+
+#calculate-prices {
+  background: green;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
