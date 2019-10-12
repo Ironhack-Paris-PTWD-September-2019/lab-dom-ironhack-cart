@@ -3,7 +3,7 @@ var $btnSuccess =document.querySelector(".btn-success");
 
 //var $shop = document.querySelector(".shop");
 
-$btnSuccess.onclick = function calculatePrice (){
+$btnSuccess.onclick = function (){
 var $products = document.querySelectorAll(".product-row");
 var products = [... $products];
 
@@ -11,11 +11,10 @@ products.forEach(function(product){
 
   var $price = product.querySelector(".price span");
   var price = +($price.innerHTML);
-
   var $quantity = product.querySelector("#input-quantity");
-  var quantity = +($quantity.getAttribute("value"));
+  var quantity = +($quantity.value);
+  var $totalproduct = product.querySelector("#tot");
   var totalproduct = price*quantity;
-  var $totalproduct = product.querySelector(".total-product span");
   $totalproduct.innerHTML = totalproduct;
 });
 
