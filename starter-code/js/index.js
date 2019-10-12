@@ -75,7 +75,6 @@ ITERATION 4: DELETE ITEMS
 ITERATION 5: ADD ITEMS
 ---- */
 var $btn = document.querySelector(".calculate button");
-var $deleteButtons = document.querySelectorAll(".btn-delete");
 var totalPrice = 0;
 
 // Button "Calculate prices"
@@ -90,19 +89,22 @@ $btn.onclick = () => {
 };
 
 // Button "Delete"
-$deleteButtons.forEach($deleteButton => {
-  $deleteButton.onclick = e => {
-    let $currentDelete = e.currentTarget;
-    let $productToDelete = $currentDelete.parentNode.parentNode;
-    $productToDelete.parentNode.removeChild($productToDelete);
+function deleteButtons() {
+  document.querySelectorAll(".btn-delete").forEach($deleteButton => {
+    $deleteButton.onclick = e => {
+      let $currentDelete = e.currentTarget;
+      let $productToDelete = $currentDelete.parentNode.parentNode;
+      $productToDelete.parentNode.removeChild($productToDelete);
 
-    // Update the total price
-    totalPrice -= Number(
-      $productToDelete.querySelector(".subtot span").innerHTML
-    );
-    document.querySelector(".total-price span").innerHTML = totalPrice;
-  };
-});
+      // Update the total price
+      totalPrice -= Number(
+        $productToDelete.querySelector(".subtot span").innerHTML
+      );
+      document.querySelector(".total-price span").innerHTML = totalPrice;
+    };
+  });
+}
+deleteButtons();
 
 // Button "Create"
 var $createButton = document.querySelector(".btn-create");
@@ -126,4 +128,7 @@ $createButton.onclick = () => {
   // Reset des inputs "Create"
   document.querySelectorAll(".new-product input")[0].value = "";
   document.querySelectorAll(".new-product input")[1].value = "";
+
+  // MAJ des boutons "delete"
+  deleteButtons();
 };
