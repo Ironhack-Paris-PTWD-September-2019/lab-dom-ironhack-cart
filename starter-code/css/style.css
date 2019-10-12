@@ -1,5 +1,22 @@
+body {
+  margin:0;
+}
 input {
   border: solid 1px black;
+}
+
+h1 {
+ text-align: center;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  
+}
+
+.element {
+  margin-right:30px;
 }
 
 .btn {
@@ -34,4 +51,23 @@ input {
     color: #fff;
     background-color: #CF000F;
     border-color: #CF000F;
+}
+
+.btn-create{
+  color: #000;
+  background-color: white;
+  border:1px solid black;
+}
+.price {
+  display: flex;
+  justify-content: center;
+}
+.btn-calculate-price {
+  color: #fff;
+  background-color:RGB(112,178,102);
+  border-color: RGB(112,178,102);
+}
+
+.product {
+  margin-bottom:2em;
 }
