@@ -43,3 +43,9 @@ input {
   padding-right: 2em;
 
 }
+
+#btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
