@@ -11,11 +11,11 @@
   
     <div id="shopping-list">
       <div class="shopping-line">
-        <div class="name">
+        <div class="productName">
           <span>IronBubble-head</span>
         </div>
     ​
-        <div>
+        <div class="productPrice">
           $<span class="unitPrice">25.00</span>
         </div>
     ​
@@ -26,8 +26,8 @@
           </label>
         </div>
     ​
-        <div>
-          $<span class="globalPrice">0</span>
+        <div class="productGlobalPrice">
+          $<span class="globalPrice">0.00</span>
         </div>
     ​
         <div>
@@ -36,11 +36,11 @@
       </div>
 
       <div class="shopping-line">
-        <div class="name">
+        <div class="productName">
           <span>IronShirt</span>
         </div>
     ​
-        <div>
+        <div class="productPrice">
           $<span class="unitPrice">15.00</span>
         </div>
     ​
@@ -51,8 +51,8 @@
           </label>
         </div>
     ​
-        <div>
-          $<span class="globalPrice">0</span>
+        <div class="productGlobalPrice">
+          $<span class="globalPrice">0.00</span>
         </div>
     ​
         <div>
@@ -60,12 +60,18 @@
         </div>
       </div>
     </div>
+
+    <div id="newProductLine">
+      <input id="newProductName" placeholder="Product name" />
+      <input id="newProductPrice" placeholder="Product price" />
+      <button id="newProductCreateButton">Create</button>
+    </div>
     ​
     <div id="shopping-action">
       <button class="btn btn-success" id="calculatePrices">Calculate Prices</button>
     </div>
 
-    <h2>Total Price: $<span id="finalPrice">0</span></h2>
+    <h2>Total Price: $<span id="finalPrice">0.00</span></h2>
 
   </div>
 

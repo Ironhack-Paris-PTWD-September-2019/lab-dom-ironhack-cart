@@ -1,3 +1,7 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 input {
   border: solid 1px black;
 }
@@ -36,9 +40,21 @@ input {
     border-color: #CF000F;
 }
 
+#container {
+  padding: 2em;
+}
+
 .shopping-line {
   display: flex;
   justify-content: space-between;
+}
+
+.productName {
+  width: 12em;
+}
+
+.productPrice, .productGlobalPrice {
+  width: 2em;
 }
 
 #shopping-action {
