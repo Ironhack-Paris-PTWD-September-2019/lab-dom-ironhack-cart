@@ -7,7 +7,76 @@
 </head>
 <body>
   <!-- start here -->
+  <div id="conteneur">
+
+    <div id="bubbleContainer" class="products">
+      <div id="productName" class="name">
+        <span>IronBubble-head</span>
+      </div>
   
+      <div class="cost">
+        $<span>25.00</span>
+      </div>
+  
+      <div class="quantity">
+        <label>
+          QTY
+          <input type="number" value="2" min="0">
+        </label>
+      </div>
+  
+      <div class="totalPrice">
+        $<span>0</span>
+      </div>
+  
+      <div class="delete">
+        <button class="btn btn-delete" id="bubbleDeleteButton">delete</button>
+      </div>
+    </div>
+    <div id="shirtContainer" class="products">
+      <div id="ironShirt" class="name">
+        <span>IronShirt</span>
+      </div>
+  
+      <div class="cost">
+        $<span>15.00</span>
+      </div>
+  
+      <div class="quantity">
+        <label>
+          QTY
+          <input type="number" value="3" min="0">
+        </label>
+      </div>
+  
+      <div class="totalPrice">
+        $<span>0</span>
+      </div>
+    
+      <div class="delete">
+        <button class="btn btn-delete" id="shirtDeleteButton">delete</button>
+      </div>
+    </div>
+    <div id="createArea">
+      <div class="createdItem">
+          <input type="text" value="" min="0">
+      </div>
+      <div class="createdPrice">
+          <input type="number" value="" min="0">
+      </div>
+      <div id="createButton">
+        <button class="btn btn-create">Create</button>
+    </div>
+    </div>
+    <div id="calculate">
+        <button class="btn btn-calculate">Calculate Prices</button>
+    </div>
+
+    <div class="globalPrice">
+      <h2>Total Price: $<span>0</span></h2>
+    </div>
+    
+  </div>
 
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
