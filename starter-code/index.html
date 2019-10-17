@@ -5,8 +5,95 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Ironhack cart</title>
 </head>
+
 <body>
-  <!-- start here -->
+  <h1>Ironhack Merchandising Shop</h1>
+  
+  <div class="product"> 
+
+    <div class="container">
+      <div class="name element">
+        <span>IronBubble-head</span>
+      </div>
+
+      <div class="element"> 
+        $<span class="price-item">25.00</span>
+      </div>
+
+      <div class="element">
+        <label>
+          QTY
+          <input type="number" value="0" min="0">
+        </label>
+      </div>
+
+      <div class="element">
+        $<span class="total-price">0</span>
+      </div>
+
+      <div class="element">
+        <button class="btn btn-delete">delete</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="product"> 
+
+      <div class="container">
+        <div class="name element">
+          <span>IronShirt</span>
+        </div>
+  
+        <div class="element"> 
+          $<span class="price-item">15.00</span>
+        </div>
+  
+        <div class="element">
+          <label>
+            QTY
+            <input type="number" value="0" min="0">
+          </label>
+        </div>
+  
+        <div class="element">
+          $<span class="total-price">0</span>
+        </div>
+  
+        <div class="element">
+          <button class="btn btn-delete">delete</button>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  <div id="create" > 
+
+      <div class="container">
+        <div class="name element">
+          <input type="text" >
+        </div>
+  
+        <div class="price-element"> 
+            <input type="number" min="0">
+        </div>
+
+  
+        <div class="element">
+          <button class="btn btn-create">create</button>
+        </div>
+  
+      </div>
+  
+    </div>
+
+  <div class="price" >
+      <button class="btn btn-calculate-price">Calculate Price</button>
+  </div>
+
+  <h1>Total Price : $<span id="big-total">0</span></h1>
   
 
   <script type="text/javascript" src="./js/index.js"></script>
