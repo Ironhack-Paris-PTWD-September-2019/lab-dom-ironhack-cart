@@ -35,3 +35,30 @@ input {
     background-color: #CF000F;
     border-color: #CF000F;
 }
+
+
+.produit{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#Title {
+  font-size: 2em;
+  width: 20%;
+  margin-left:50%;
+  margin-bottom:1em;
+}
+
+.calculatePrice {
+  background-color: #4cae4c;
+  color: white;
+  margin-left:50%;
+  margin-top: 1em;
+}
+
+.total {
+  
+
+}
