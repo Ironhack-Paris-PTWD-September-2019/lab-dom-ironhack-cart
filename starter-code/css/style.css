@@ -35,3 +35,20 @@ input {
     background-color: #CF000F;
     border-color: #CF000F;
 }
+
+.product {
+  display:flex;
+  justify-content: space-between;
+}
+
+.totalb{
+  background:green;
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.totalprice {
+ text-align: center;
+  font-size : 2em;
+}
