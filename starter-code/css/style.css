@@ -1,3 +1,7 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 input {
   border: solid 1px black;
 }
@@ -34,4 +38,28 @@ input {
     color: #fff;
     background-color: #CF000F;
     border-color: #CF000F;
+}
+
+#bubbleContainer{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+#shirtContainer{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+
+#calculate {
+  text-align: center;;
+}
+
+.globalPrice {
+  text-align: center;
+}
+
+#createArea {
+  display: flex;
 }
